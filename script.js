@@ -25,10 +25,13 @@ if (time == partyTime){
 	messageText = "IZ TIME TO GETTUP.";
 } else if (time < noon) {
 	messageText = "Good morning!";
+    image = "https://cleverpetowners.com/wp-content/uploads/2020/07/why-is-my-cat-so-affectionate-in-the-morning.jpg";
 } else if (time > evening) {
     messageText = "Good Evening!";
+    image = "https://www.purina.co.uk/sites/default/files/2018-06/cat-silhouette-moonlight.jpg";
 } else {
     messageText = "Good afternoon!";
+    image = "https://cdn.pixabay.com/photo/2017/05/31/09/54/cat-2359779_960_720.jpg";
 }
 
 var timeText = document.getElementById("timeEvent");
