@@ -12,26 +12,26 @@ var isPartyTime = false;
 
 var updateClock = function () {
 if (time == partyTime){
-    image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
-	messageText = "IZ PARTEE TIME!!";
+    image = "https://winebinec.com/wp-content/uploads/2020/01/Yappy-Event-Featured-Image-650x500-2602326872.png";
+	messageText = "PARTY TIME!!";
 } else if (time == napTime) {
-    image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat3.jpg";
-	messageText = "IZ NAP TIME...";
+    image = "https://www.thesprucepets.com/thmb/DB6uRHgI74J-DvZSXjsDiWdrSyY=/450x0/filters:no_upscale():max_bytes(150000):strip_icc()/step_12-trick_your_mom-58b738205f9b5880803f7dd4.jpg";
+	messageText = "NAP TIME...";
 } else if (time == lunchTime) {
-    image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat2.jpg";
-	messageText = "IZ NOM NOM NOM TIME!!";
+    image = "https://s3.amazonaws.com/cdn-origin-etr.akc.org/wp-content/uploads/2019/10/07103020/SHOT-02_53448-copy.jpg";
+	messageText = "NOM NOM NOM TIME!!";
 } else if (time == wakeUpTime) {
-    image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat1.jpg";
-	messageText = "IZ TIME TO GETTUP.";
+    image = "https://www.madpaws.com.au/wp-content/uploads/2018/08/dog-1517133_1920.jpg";
+	messageText = "TIME TO GETTUP.";
 } else if (time < noon) {
 	messageText = "Good morning!";
-    image = "https://cleverpetowners.com/wp-content/uploads/2020/07/why-is-my-cat-so-affectionate-in-the-morning.jpg";
+    image = "https://barkpost.com/wp-content/uploads/2016/07/good-morning-feature.jpg";
 } else if (time > evening) {
     messageText = "Good Evening!";
-    image = "https://www.purina.co.uk/sites/default/files/2018-06/cat-silhouette-moonlight.jpg";
+    image = "https://transpawgear.com/wp-content/uploads/2021/01/transpawgear-doggy-date-night.jpeg";
 } else {
     messageText = "Good afternoon!";
-    image = "https://cdn.pixabay.com/photo/2017/05/31/09/54/cat-2359779_960_720.jpg";
+    image = "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2020%2F09%2F22%2F50-cute-dog-names.jpg";
 }
 
 var timeText = document.getElementById("timeEvent");
@@ -92,14 +92,14 @@ var partyEvent = function() {
       isPartyTime = true;
       time = partyTime;
       button.innerText = "PARTY TIME!";
-	  button.style.backgroundColor = "#222";
+	  button.style.backgroundColor = "#FF6F61";
       // color of the button should be "#0A8DAB" (bonus!)
    }
    else {
       isPartyTime = false;
       time = new Date().getHours();
       button.innerText = "PARTY OVER";
-	 button.style.backgroundColor = "#0A8DAB";
+	 button.style.backgroundColor = "#222";
    }
 };
 
