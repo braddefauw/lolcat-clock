@@ -32,6 +32,11 @@ body {
   h1, h2, h3, h6 {
     font-family: 'Bungee Shade', cursive;
   }
+
+  img {
+      height: 380px;
+      width: 470px;
+  }
   
   blockquote {
     font: 2em/1em 'Open Sans', sans-serif;
